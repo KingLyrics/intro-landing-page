@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <title>Vite App</title>
+</head>
+
+<body class="font-Epilogue">
+
+  <!-- Navbar -->
+  <nav>
+    <!-- navbar container -->
+    <div class="container w-full flex justify-between items-center mt-6 relative">
+      <!-- logo and links -->
+      <div class="ml-4 md:ml-7 flex space-x-16 hover:cursor-pointer">
+        <img src="./images/logo.svg" alt="Snap Logo">
+        <div class="hidden sm:flex space-x-7">
+          <a class="text-Medium-Gray hover:text-Almost-black dropdown" href="#">Features</a>
+          <a class="text-Medium-Gray hover:text-Almost-black " href="#">Company</a>
+          <a class="text-Medium-Gray hover:text-Almost-black" href="#">Careers</a>
+          <a class="text-Medium-Gray hover:text-Almost-black" href="#">About</a>
+        </div>
+      </div>
+      <!-- Menu -->
+      <div class="Mobile:mr-3 md:hidden Desktop:hidden  z-50">
+        <img id="menu" src="./images/icon-menu.svg" class="cursor-pointer" alt="">
+      </div>
+      <!-- Right hand links -->
+      <div class=" hidden sm:flex space-x-5 items-center">
+        <a href="#" class="text-Medium-Gray pr-5 hover:text-Almost-black">Login</a>
+        <div
+          class="text-Medium-Gray border border-Medium-Gray py-2 px-3 rounded-lg hover:cursor-pointer hover:border-Almost-black hover:text-Almost-black">
+          Register</div>
+      </div>
+
+      <!-- Sidebar list -->
+      <div id="list" class="hidden absolute  top-0 right-0  -mt-7 bg-black py-9 px-5 h-screen w-64 z-10">
+
+        <div class="mt-8 flex flex-col space-y-4">
+          <a class="text-Medium-Gray" href="#">Features</a>
+          <a class="text-Medium-Gray" href="#">Company</a>
+          <a class="text-Medium-Gray" href="#">Careers</a>
+          <a class="text-Medium-Gray" href="#">About</a>
+        </div>
+
+        <div class="mt-8 text-center">
+          <a href="#" class="text-Medium-Gray">Login</a>
+
+          <div
+            class="text-Medium-Gray border border-Medium-Gray py-2 px-3 rounded-lg hover:cursor-pointer mt-4 cursor-pointer">
+            Register</div>
+        </div>
+
+      </div>
+
+      <!-- Collapsed on large list -->
+
+      <div
+        class="dropdown hidden peer-hover:flex hover:flex absolute  left-20 top-11 bg-Almost-white p-8 shadow-2xl py-3 rounded-lg">
+        <div class="flex flex-col space-y-4">
+
+          <span class=" flex space-x-4 flex-wrap items-center"><img src="./images/icon-todo.svg" alt=""> <a
+              class="text-Medium-Gray" href="#">Todo List</a> </span>
+
+          <span class=" flex space-x-4 flex-wrap items-center"><img src="./images/icon-calendar.svg" alt=""> <a
+              class="text-Medium-Gray" href="#">Calendar</a> </span>
+
+          <span class="flex space-x-4 flex-wrap items-center"><img src="./images/icon-reminders.svg" alt=""> <a
+              class="text-Medium-Gray" href="#">Reminders</a> </span>
+
+          <span class="flex space-x-4 flex-wrap items-center"><img src="./images/icon-planning.svg" alt=""> <a
+              class="text-Medium-Gray" href="#">Planning</a> </span>
+        </div>
+      </div>
+
+      <div class=" hidden absolute left-72 top-16  bg-Almost-white p-4 rounded-lg shadow-2xl">
+        <div class="flex flex-col space-y-3">
+          <a class="text-Medium-Gray" href="#">History</a>
+          <a class="text-Medium-Gray" href="#">Our Team</a>
+          <a class="text-Medium-Gray" href="#">Blog</a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  <!-- End of navbar -->
+  <!-- fix navbar active states. You can do this Ekom. -->
+
+  <!-- Hero section -->
+
+
+  <div class="container mx-auto">
+    <!-- hero container -->
+    <div class="md:flex items-center md:flex-row-reverse justify-around ">
+      <!-- Hero img -->
+      <div class="mt-9">
+        <img src="./images/image-hero-mobile.png" alt="" class="md:hidden">
+        <img src="./images/image-hero-desktop.png" alt="" class="hidden md:block max-w-sm">
+
+      </div>
+
+      <div class="flex justify-center flex-col text-center">
+        <!-- Text, button, and sponsors -->
+        <div class="text-center text-3xl mt-10 font-bold md:text-6xl md:max-w-md md:text-left md:mt-11 ">
+          <!-- Hero text -->
+          Make remote work
+        </div>
+
+        <div class="text-Medium-Gray text-md py-5 flex max-w-xs mx-auto leading-6 text-center md:mx-0 md:max-w-md md:text-left md:text-lg md:mt-5 md:py-0">
+          <!-- Hero body -->
+
+          Get your team in sync, no matter your location. Streamline processes, create team rituals and watch productivity soar.
+        </div>
+
+        <div class="bg-black text-white w-28 mx-auto py-3 px-2 rounded-xl cursor-pointer md:text-center md:mx-0 md:mt-10 md:px-5 md:w-36">
+          <!-- button -->
+          Learn more
+        </div>
+
+        <div class="flex justify-between items-center mt-11 md:space-x-8 md:mt-20">
+
+          <!-- Sponsors -->
+          <img src="./images/client-databiz.svg" alt="" class="w-20 cursor-pointer">
+          <img src="./images/client-audiophile.svg" alt="" class="w-20 cursor-pointer">
+          <img src="./images/client-meet.svg" alt="" class="w-20 cursor-pointer">
+          <img src="./images/client-maker.svg" alt="" class="w-20 cursor-pointer">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
